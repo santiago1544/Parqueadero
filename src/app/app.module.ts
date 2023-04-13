@@ -25,9 +25,9 @@ import { Sotano2Component } from './components/pisos/sotano2/sotano2.component'
         AppComponent,
         AlertComponent,
         HomeComponent,
-        Sotano1Component
-,
-        Sotano2Component      ],
+        Sotano1Component,
+        Sotano2Component
+      ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
         { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },

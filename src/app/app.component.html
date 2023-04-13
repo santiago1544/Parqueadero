@@ -1,21 +1,24 @@
 ﻿<!-- nav -->
-<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="user">
+<div class="espacio">
+<nav class="navbar navbar-expand navbar-dark bg-primary" *ngIf="user">
+  <img src="assets/User.svg" class="size"/>
     <div class="navbar-nav">
-        <a class="nav-item">Bienvenido</a>
-        <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
-        <a class="nav-item nav-link" routerLink="/users" routerLinkActive="active">Users</a>
-        <a class="nav-item nav-link" (click)="logout()">Logout</a>
-        <a class="nav-item nav-link" routerLink="/users" routerLinkActive="active">Users</a>
-        <a class="nav-item nav-link" routerLink="/users" routerLinkActive="active">Users</a>
-        <a class="nav-item nav-link" routerLink="/users" routerLinkActive="active">Users</a>
+        <span class="nav-item nav-link text-white">Bienvenido</span>
+        <span class="nav-item nav-link text-white">{{user.username}}</span>
+        <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"> Nivel 1</a>
+        <a class="nav-item nav-link" routerLink="/sotano1" routerLinkActive="active">Sotano 1</a>
+        <a class="nav-item nav-link" routerLink="/sotano2" routerLinkActive="active">Sotano 2</a>
+
+        <h2> PARKING DISERSOFT</h2>
+        <a class="nav-item nav-link" routerLink="/users" routerLinkActive="active">Lista de usuarios registrados</a>
+        <a class="nav-item nav-link" (click)="logout()">Cerrar sesion</a>
+
+
     </div>
 </nav>
-
-
-
-
+</div>
 <!-- main app container -->
-<div class="app-container" [ngClass]="{ 'bg-light': user }">
+<div class="app-container" [ngClass]="{ 'bg-white': user }">
     <alert></alert>
     <router-outlet></router-outlet>
 </div>

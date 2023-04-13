@@ -1,7 +1,19 @@
-﻿<div class="p-4">
-    <div class="container">
-        <h1>Hi {{user.username}}!</h1>
-        <p>You're logged in with Angular 10!!</p>
-        <p><a routerLink="/users">Manage Users</a></p>
-    </div>
+﻿<br>
+<div class="container">
+  <h1>Bienvenido al mapa del Nivel 1 del parqueadero</h1>
 </div>
+<br>
+  <canvas id="canvas" height="790" width="1700" style="border:1px solid #000000; "></canvas>
+	<button id="square" class="btn btn-success btn-lg">Crear cuadrado</button>
+  <br>
+  <button id="circle" class="btn btn-info btn-lg" style="position: relative; bottom:760px; ">Crear circulo</button>
+  <br>
+  <button id="guardar" class="btn btn-primary btn-lg" (click)="descargar()">Guardar Plano</button>
+  <br>
+  <button class="btn btn-danger btn-lg" (click)="clear()">Borrar Items</button>
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+h1{
+  margin-left: 200px;
+}
+
+.tamaño{
+  margin-left: 500px;
+}
+
+.btn-success{
+  position: relative;
+  left:1720px;
+  bottom:790px ;
+}
+
+.btn-info{
+  position: relative;
+  left:1720px;
+  bottom:790px ;
+}
+
+.btn-primary{
+  position: relative;
+  left:1720px;
+   bottom:730px;
+}
+
+.btn-danger{
+  position: relative;
+  left:1720px;
+  bottom:700px;
+}
