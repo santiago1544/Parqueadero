@@ -4,7 +4,7 @@ import { Observable, of, throwError } from 'rxjs';
 import { delay, materialize, dematerialize } from 'rxjs/operators';
 
 // array in local storage for registered users
-const usersKey = 'angular-10-registration-login-example-users';
+const usersKey = 'usuarios';
 let users = JSON.parse(localStorage.getItem(usersKey)) || [];
 
 @Injectable()
@@ -31,7 +31,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
                 default:
                     // pass through any requests not handled above
                     return next.handle(request);
-            }    
+            }
         }
 
         // route functions

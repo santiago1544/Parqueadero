@@ -21,14 +21,14 @@ export class HomeComponent implements OnInit {
       })
 
       document.getElementById('square').addEventListener('click', () => {
-        this.canvas.add(new fabric.Rect({
+        localStorage.setItem('cuadrado', this.canvas.add(new fabric.Rect({
           stroke: 'green',
           fill: 'green',
           width: 50,
           height: 50,
           left: 100,
           top: 100
-        }));
+        })))
       });
 
       document.getElementById('circle').addEventListener('click', () => {
